@@ -31,7 +31,11 @@ class _HomeScreenState extends State<HomeScreen> {
         context,
         MaterialPageRoute(
           builder: (_) => UserScreen(
+            name: user.name,
+            email: user.email,
+            phone: user.phone,
             picture: user.picture,
+            nation: user.nation,
           ),
         ),
       ),
